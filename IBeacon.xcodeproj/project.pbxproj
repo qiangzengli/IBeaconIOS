@@ -10,20 +10,27 @@
 		E79AD4162B108F11001317A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4152B108F11001317A5 /* AppDelegate.swift */; };
 		E79AD4182B108F11001317A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4172B108F11001317A5 /* SceneDelegate.swift */; };
 		E79AD41A2B108F11001317A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4192B108F11001317A5 /* ViewController.swift */; };
-		E79AD41D2B108F11001317A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79AD41B2B108F11001317A5 /* Main.storyboard */; };
-		E79AD41F2B108F13001317A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79AD41E2B108F13001317A5 /* Assets.xcassets */; };
-		E79AD4222B108F13001317A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79AD4202B108F13001317A5 /* LaunchScreen.storyboard */; };
+		E7FA766F2B109A7500CD32E1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79AD42A2B108FD5001317A5 /* CoreBluetooth.framework */; };
+		E7FA76722B109A7900CD32E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79AD42C2B108FE4001317A5 /* CoreLocation.framework */; };
+		E7FA76742B109A7A00CD32E1 /* Pods_IBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201F4FD93E25FD22E2390E8 /* Pods_IBeacon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D9A1C6944FE82E7D18B4DBF /* Pods-IBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBeacon.release.xcconfig"; path = "Target Support Files/Pods-IBeacon/Pods-IBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		9201F4FD93E25FD22E2390E8 /* Pods_IBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36DA5103577402DF0C8CF0A /* Pods-IBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBeacon.debug.xcconfig"; path = "Target Support Files/Pods-IBeacon/Pods-IBeacon.debug.xcconfig"; sourceTree = "<group>"; };
 		E79AD4122B108F11001317A5 /* IBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79AD4152B108F11001317A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79AD4172B108F11001317A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E79AD4192B108F11001317A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E79AD41C2B108F11001317A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E79AD41E2B108F13001317A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E79AD4212B108F13001317A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79AD4232B108F13001317A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79AD42A2B108FD5001317A5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E79AD42C2B108FE4001317A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E7FA00562B10E82A00AC1709 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FA766D2B109A0300CD32E1 /* IBeacon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IBeacon; sourceTree = "<group>"; };
+		E7FA76762B109F4900CD32E1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E7FA76772B10A0B600CD32E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FA76742B109A7A00CD32E1 /* Pods_IBeacon.framework in Frameworks */,
+				E7FA76722B109A7900CD32E1 /* CoreLocation.framework in Frameworks */,
+				E7FA766F2B109A7500CD32E1 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D8768A18644D22B2983585F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A36DA5103577402DF0C8CF0A /* Pods-IBeacon.debug.xcconfig */,
+				0D9A1C6944FE82E7D18B4DBF /* Pods-IBeacon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E79AD4092B108F11001317A5 = {
 			isa = PBXGroup;
 			children = (
 				E79AD4142B108F11001317A5 /* IBeacon */,
 				E79AD4132B108F11001317A5 /* Products */,
+				E79AD4292B108FD4001317A5 /* Frameworks */,
+				3D8768A18644D22B2983585F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +80,24 @@
 				E79AD4152B108F11001317A5 /* AppDelegate.swift */,
 				E79AD4172B108F11001317A5 /* SceneDelegate.swift */,
 				E79AD4192B108F11001317A5 /* ViewController.swift */,
-				E79AD41B2B108F11001317A5 /* Main.storyboard */,
 				E79AD41E2B108F13001317A5 /* Assets.xcassets */,
-				E79AD4202B108F13001317A5 /* LaunchScreen.storyboard */,
 				E79AD4232B108F13001317A5 /* Info.plist */,
+				E7FA76762B109F4900CD32E1 /* Main.storyboard */,
 			);
 			path = IBeacon;
+			sourceTree = "<group>";
+		};
+		E79AD4292B108FD4001317A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7FA00562B10E82A00AC1709 /* SnapKit.framework */,
+				E7FA76772B10A0B600CD32E1 /* UIKit.framework */,
+				E79AD42C2B108FE4001317A5 /* CoreLocation.framework */,
+				E79AD42A2B108FD5001317A5 /* CoreBluetooth.framework */,
+				9201F4FD93E25FD22E2390E8 /* Pods_IBeacon.framework */,
+				E7FA766D2B109A0300CD32E1 /* IBeacon */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E79AD4262B108F13001317A5 /* Build configuration list for PBXNativeTarget "IBeacon" */;
 			buildPhases = (
+				C538512B40E07B1A94958082 /* [CP] Check Pods Manifest.lock */,
 				E79AD40E2B108F11001317A5 /* Sources */,
 				E79AD40F2B108F11001317A5 /* Frameworks */,
-				E79AD4102B108F11001317A5 /* Resources */,
+				E58D5539C375C013652AB7EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,18 +154,47 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		E79AD4102B108F11001317A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		C538512B40E07B1A94958082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79AD4222B108F13001317A5 /* LaunchScreen.storyboard in Resources */,
-				E79AD41F2B108F13001317A5 /* Assets.xcassets in Resources */,
-				E79AD41D2B108F11001317A5 /* Main.storyboard in Resources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBeacon-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		E58D5539C375C013652AB7EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBeacon/Pods-IBeacon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBeacon/Pods-IBeacon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBeacon/Pods-IBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E79AD40E2B108F11001317A5 /* Sources */ = {
@@ -145,25 +208,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E79AD41B2B108F11001317A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E79AD41C2B108F11001317A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E79AD4202B108F13001317A5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E79AD4212B108F13001317A5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E79AD4242B108F13001317A5 /* Debug */ = {
@@ -218,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,12 +331,14 @@
 		};
 		E79AD4272B108F13001317A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36DA5103577402DF0C8CF0A /* Pods-IBeacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9Z6339KSM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBeacon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +361,14 @@
 		};
 		E79AD4282B108F13001317A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9A1C6944FE82E7D18B4DBF /* Pods-IBeacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9Z6339KSM9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBeacon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
