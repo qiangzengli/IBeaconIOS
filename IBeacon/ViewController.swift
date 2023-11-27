@@ -38,6 +38,10 @@ class ViewController: UIViewController {
 
     
     func initView(){
+        distance.textColor = .black
+        rssi.textColor = .black
+        major.textColor = .black
+        minor.textColor = .black
         container.axis = .vertical
         container.alignment = .top
         container.addArrangedSubview(distance)
