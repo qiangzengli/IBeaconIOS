@@ -57,22 +57,22 @@ class ViewController: UIViewController {
         }
       
         distance.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(container.snp.top).offset(10)
+//            make.top.equalTo(container.snp.top).offset(10)
             make.height.equalTo(40)
         }
         
         rssi.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(distance.snp.bottom).offset(10)
+//            make.top.equalTo(distance.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
         
         major.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(rssi.snp.bottom).offset(10)
+//            make.top.equalTo(rssi.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
         
         minor.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(major.snp.bottom).offset(10)
+//            make.top.equalTo(major.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
       
@@ -116,7 +116,7 @@ extension ViewController :CLLocationManagerDelegate{
         print("didRangeBeacons\(beacons.count)")
         if let beacon = beacons.first{
             print("距离最近的beacon : \(beacon.`self`())")
-            distance.text = "IBeacon 信标的距离是：\(rssi2Distance(rssi: beacon.rssi))"
+            distance.text = "IBeacon 信标的距离是：\(beacon.rssi == 0 ? 0.0 :rssi2Distance(rssi: beacon.rssi)) m"
             major.text = "major:\(beacon.major)"
             minor.text = "minor:\(beacon.minor)"
             rssi.text = "rssi:\(beacon.rssi)"
