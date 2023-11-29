@@ -10,6 +10,7 @@
 		E79AD4162B108F11001317A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4152B108F11001317A5 /* AppDelegate.swift */; };
 		E79AD4182B108F11001317A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4172B108F11001317A5 /* SceneDelegate.swift */; };
 		E79AD41A2B108F11001317A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AD4192B108F11001317A5 /* ViewController.swift */; };
+		E7CDE5CC2B15AFC4003B5835 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDE5CB2B15AFC4003B5835 /* BluetoothViewController.swift */; };
 		E7FA766F2B109A7500CD32E1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79AD42A2B108FD5001317A5 /* CoreBluetooth.framework */; };
 		E7FA76722B109A7900CD32E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79AD42C2B108FE4001317A5 /* CoreLocation.framework */; };
 		E7FA76742B109A7A00CD32E1 /* Pods_IBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201F4FD93E25FD22E2390E8 /* Pods_IBeacon.framework */; };
@@ -27,6 +28,7 @@
 		E79AD4232B108F13001317A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79AD42A2B108FD5001317A5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		E79AD42C2B108FE4001317A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E7CDE5CB2B15AFC4003B5835 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		E7FA00562B10E82A00AC1709 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FA766D2B109A0300CD32E1 /* IBeacon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IBeacon; sourceTree = "<group>"; };
 		E7FA76762B109F4900CD32E1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				E79AD41E2B108F13001317A5 /* Assets.xcassets */,
 				E79AD4232B108F13001317A5 /* Info.plist */,
 				E7FA76762B109F4900CD32E1 /* Main.storyboard */,
+				E7CDE5CB2B15AFC4003B5835 /* BluetoothViewController.swift */,
 			);
 			path = IBeacon;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79AD41A2B108F11001317A5 /* ViewController.swift in Sources */,
+				E7CDE5CC2B15AFC4003B5835 /* BluetoothViewController.swift in Sources */,
 				E79AD4162B108F11001317A5 /* AppDelegate.swift in Sources */,
 				E79AD4182B108F11001317A5 /* SceneDelegate.swift in Sources */,
 			);

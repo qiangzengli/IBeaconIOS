@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>IBeacon需要蓝牙权限</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>IBeacon需要蓝牙权限</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>IBeacon 需要位置权限</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

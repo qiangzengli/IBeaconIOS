@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
           window?.windowScene = windowScene
           window?.backgroundColor = UIColor.white
           window?.makeKeyAndVisible()
-          window?.rootViewController = ViewController()
+          window?.rootViewController = BluetoothViewController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

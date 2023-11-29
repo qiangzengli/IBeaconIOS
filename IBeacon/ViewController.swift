@@ -57,22 +57,18 @@ class ViewController: UIViewController {
         }
       
         distance.snp.makeConstraints { (make) -> Void in
-//            make.top.equalTo(container.snp.top).offset(10)
             make.height.equalTo(40)
         }
         
         rssi.snp.makeConstraints { (make) -> Void in
-//            make.top.equalTo(distance.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
         
         major.snp.makeConstraints { (make) -> Void in
-//            make.top.equalTo(rssi.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
         
         minor.snp.makeConstraints { (make) -> Void in
-//            make.top.equalTo(major.snp.bottom).offset(10)
             make.height.equalTo(40)
         }
       
@@ -116,7 +112,7 @@ extension ViewController :CLLocationManagerDelegate{
         print("didRangeBeacons\(beacons.count)")
         if let beacon = beacons.first{
             print("距离最近的beacon : \(beacon.`self`())")
-            distance.text = "IBeacon 信标的距离是：\(beacon.rssi == 0 ? 0.0 :rssi2Distance(rssi: beacon.rssi)) m"
+            distance.text = "IBeacon 信标的距离是：\(beacon.rssi == 0 ? 0.0 : calculateDistance(rssi : Double(beacon.rssi))) m"
             major.text = "major:\(beacon.major)"
             minor.text = "minor:\(beacon.minor)"
             rssi.text = "rssi:\(beacon.rssi)"
@@ -131,6 +127,12 @@ extension ViewController :CLLocationManagerDelegate{
           let f = 5.67
         let power :Double = ( Double(iRssi) - s) / (10.0 * f)
         return pow(10.0,power)
+      }
+    
+    func calculateDistance(rssi: Double, txPower: Double = -60.0, pathLossExponent: Double = 2.5) -> Double {
+          // 路径损耗指数模型中的距离计算公式
+        let ratio = (txPower - rssi) / (10.0 * pathLossExponent)
+        return pow(10.0,ratio)
       }
 
 }
