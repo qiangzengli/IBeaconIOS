@@ -72,7 +72,8 @@ extension BluetoothViewController: CBCentralManagerDelegate {
         print("RSSI: \(RSSI)")
         print("计算距离：\(calculateDistance(rssi: Double.init(truncating: RSSI)))")
         
-        if peripheral.name == nil || peripheral.name != "R23060287"{return}
+//        if peripheral.name == nil || peripheral.name != "R23060287"{return}
+        guard let name = peripheral.name, name == "R23060287" else {return}
         
         // 将发现的设备添加到数组中
         if !discoveredPeripherals.contains(peripheral) {
